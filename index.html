@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0f0f0f">
+    <meta name="color-scheme" content="dark">
+    <title>I Made You Something</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ====== INTRO / MUSIC PROMPT ====== -->
+    <div id="intro">
+        <div class="intro-inner">
+            <p class="intro-text">I made you something</p>
+            <p class="intro-sub">turn your volume up</p>
+            <button id="play-btn" class="play-button">
+                <span class="play-icon">&#9654;</span>
+                <span>Play</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- ====== AUDIO PLAYER ====== -->
+    <audio id="bg-audio" preload="auto" loop>
+        <source src="music/Edd_Sheeran_-_Perfect_(mp3.pm).mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- ====== MAIN CONTENT ====== -->
+    <main id="content" class="hidden">
+
+        <!-- Card 1: Nobody meme -->
+        <section class="meme-card nobody" id="card-1">
+            <div class="meme-inner">
+                <p class="meme-line">Nobody:</p>
+                <p class="meme-line">Absolutely nobody:</p>
+                <p class="meme-line">Me at 3am:</p>
+                <div class="meme-photo-wrap">
+                    <img src="photos/photo1.jpeg" alt="Us" class="meme-photo" data-viewer>
+                </div>
+                <p class="meme-punchline">"thinking about you"</p>
+            </div>
+        </section>
+
+        <!-- Card 2: Drake format -->
+        <section class="meme-card drake" id="card-2">
+            <div class="meme-inner">
+                <div class="drake-panel reject">
+                    <div class="drake-emoji">&#128528;</div>
+                    <p class="drake-text">being normal about this</p>
+                </div>
+                <div class="drake-panel approve">
+                    <div class="drake-emoji">&#128526;</div>
+                    <p class="drake-text">making a whole website to ask you out</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Card 3: Photo card -->
+        <section class="meme-card photo" id="card-3">
+            <div class="meme-inner">
+                <div class="meme-photo-wrap single">
+                    <img src="photos/photo2.jpeg" alt="You" class="meme-photo tilted-left" data-viewer>
+                </div>
+                <p class="meme-caption impact">Exhibit A: you being unreasonably attractive</p>
+            </div>
+        </section>
+
+        <!-- Card 4: Distracted boyfriend -->
+        <section class="meme-card distracted" id="card-4">
+            <div class="meme-inner">
+                <div class="distracted-layout">
+                    <div class="distracted-item">
+                        <span class="distracted-emoji">&#128064;</span>
+                        <p>Me</p>
+                    </div>
+                    <div class="distracted-item highlight">
+                        <span class="distracted-emoji">&#128187;</span>
+                        <p>This website</p>
+                    </div>
+                    <div class="distracted-item faded">
+                        <span class="distracted-emoji">&#128172;</span>
+                        <p>Literally any other way to ask you out</p>
+                    </div>
+                </div>
+                <p class="meme-caption impact small">priorities.</p>
+            </div>
+        </section>
+
+        <!-- Card 5: Double photo -->
+        <section class="meme-card photo" id="card-5">
+            <div class="meme-inner">
+                <div class="photo-duo">
+                    <img src="photos/photo3.jpg" alt="Us" class="meme-photo tilted-left" data-viewer>
+                    <img src="photos/photo4.jpeg" alt="Us" class="meme-photo tilted-right" data-viewer>
+                </div>
+                <p class="meme-caption impact">evidence that we're cute. the jury has decided.</p>
+            </div>
+        </section>
+
+        <!-- Card 6: POV meme -->
+        <section class="meme-card pov" id="card-6">
+            <div class="meme-inner">
+                <p class="pov-label">POV:</p>
+                <p class="pov-text">you open a link your partner sent you and it's a whole website</p>
+                <div class="meme-photo-wrap">
+                    <img src="photos/photo10.jpg" alt="Us" class="meme-photo" data-viewer>
+                </div>
+            </div>
+        </section>
+
+        <!-- Card 7: Single photo -->
+        <section class="meme-card photo" id="card-7">
+            <div class="meme-inner">
+                <div class="meme-photo-wrap full">
+                    <img src="photos/photo6.jpeg" alt="Us" class="meme-photo" data-viewer>
+                </div>
+                <p class="meme-caption impact">I saved this photo approximately 1000 times</p>
+            </div>
+        </section>
+
+        <!-- Card 8: Expanding brain -->
+        <section class="meme-card expanding-brain" id="card-8">
+            <div class="meme-inner">
+                <div class="brain-row level-1">
+                    <span class="brain-emoji">&#129504;</span>
+                    <p>sending a text</p>
+                </div>
+                <div class="brain-row level-2">
+                    <span class="brain-emoji">&#128161;</span>
+                    <p>calling you</p>
+                </div>
+                <div class="brain-row level-3">
+                    <span class="brain-emoji">&#10024;</span>
+                    <p>writing a letter</p>
+                </div>
+                <div class="brain-row level-4">
+                    <span class="brain-emoji">&#128165;</span>
+                    <p>building an entire website</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Card 9: Photo collage -->
+        <section class="meme-card photo collage-card" id="card-9">
+            <div class="meme-inner">
+                <div class="photo-collage">
+                    <img src="photos/photo7.jpeg" alt="Us" class="meme-photo scatter-1" data-viewer>
+                    <img src="photos/photo8.jpeg" alt="Us" class="meme-photo scatter-2" data-viewer>
+                    <img src="photos/photo1.jpeg" alt="Us" class="meme-photo scatter-3" data-viewer>
+                </div>
+                <p class="meme-caption impact">more evidence (I have 47GB more)</p>
+            </div>
+        </section>
+
+        <!-- Card 10: "This is fine" -->
+        <section class="meme-card this-is-fine" id="card-10">
+            <div class="meme-inner">
+                <p class="fine-text">everything is fine</p>
+                <p class="fine-sub">(me waiting for your answer):</p>
+                <div class="fine-emoji-row">
+                    <span>&#128517;</span>
+                    <span>&#128514;</span>
+                    <span>&#128552;</span>
+                    <span>&#128560;</span>
+                    <span>&#129393;</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Card 11: Genuine moment -->
+        <section class="meme-card genuine" id="card-11">
+            <div class="meme-inner">
+                <div class="meme-photo-wrap full">
+                    <img src="photos/photo2.jpeg" alt="Us" class="meme-photo" data-viewer>
+                </div>
+                <p class="genuine-caption">but seriously though, you make me really happy</p>
+            </div>
+        </section>
+
+        <!-- ====== PROPOSAL ====== -->
+        <section id="proposal">
+            <div class="proposal-inner">
+                <p class="proposal-setup">so here's the thing</p>
+                <p class="proposal-sub">I like you a normal amount (this is a lie)</p>
+                <h1 class="proposal-question">Will you be my Valentine?</h1>
+                <div class="button-row" id="button-row">
+                    <button id="yes-btn" class="btn btn-yes">Yes (correct answer)</button>
+                    <button id="no-btn" class="btn btn-no">No</button>
+                </div>
+                <div id="scoreboard" class="scoreboard hidden"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ====== PHOTO VIEWER (lightbox) ====== -->
+    <div id="photo-viewer" class="overlay hidden">
+        <img id="viewer-image" src="" alt="Memory">
+        <button id="viewer-close" class="viewer-close" aria-label="Close">&times;</button>
+    </div>
+
+    <!-- ====== ERROR POPUP ====== -->
+    <div id="error-overlay" class="overlay hidden">
+        <div class="error-card">
+            <div class="error-header">
+                <span>SYSTEM ERROR</span>
+                <button class="error-x" id="error-x">&times;</button>
+            </div>
+            <div class="error-body">
+                <p class="error-code">Error 404</p>
+                <p class="error-title">"No" is not a valid response.</p>
+                <p class="error-detail">Valid reason to say no not found. Did you mean:</p>
+                <ul class="error-list">
+                    <li>"Yes"</li>
+                    <li>"Absolutely"</li>
+                    <li>"I thought you'd never ask"</li>
+                </ul>
+            </div>
+            <div class="error-actions">
+                <button class="btn btn-yes" id="error-ok">OK, I'll say Yes</button>
+                <button class="btn btn-ghost" id="error-retry">Retry (also yes)</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== ANALYSIS POPUP ====== -->
+    <div id="analysis-overlay" class="overlay hidden">
+        <div class="analysis-card">
+            <div class="analysis-header">RELATIONSHIP ANALYSIS COMPLETE</div>
+            <div class="analysis-body" id="analysis-body">
+                <div class="row"><span>Cuteness level</span><span class="dots"></span><span class="value highlight">off the charts</span></div>
+                <div class="row"><span>Compatible?</span><span class="dots"></span><span class="value highlight">obviously</span></div>
+                <div class="row"><span>Should you say yes?</span><span class="dots"></span><span class="value highlight">duh</span></div>
+                <div class="row"><span>Probability of regret</span><span class="dots"></span><span class="value">0.00%</span></div>
+                <div class="rec">VERDICT: just say yes already</div>
+            </div>
+            <button class="btn btn-yes analysis-dismiss">Understood</button>
+        </div>
+    </div>
+
+    <!-- ====== CELEBRATION ====== -->
+    <div id="celebration" class="overlay hidden">
+        <canvas id="confetti-canvas"></canvas>
+        <div id="floating-container"></div>
+        <div class="celebration-content">
+            <h1 class="celebration-title">SHE SAID YES</h1>
+            <p class="celebration-sub">(my hands can stop shaking now)</p>
+        </div>
+        <div class="message-wall hidden">
+            <p class="msg-line">you make me laugh</p>
+            <p class="msg-line">you make me brave</p>
+            <p class="msg-line">you make everything better</p>
+            <p class="msg-line">I'm so glad it's you</p>
+            <p class="msg-line msg-final">happy valentine's day</p>
+        </div>
+    </div>
+
+    <!-- ====== SCRIPTS ====== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
